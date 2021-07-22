@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp">
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ff333333"
+            android:textSize="17sp"
+            android:paddingLeft="13dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:textColor="#ff333333"
+            android:textSize="15sp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="13dp">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:paddingLeft="13dp"
+        android:gravity="center_vertical"
+        android:textColor="#ff333333"
+        android:textSize="14sp">
+    </TextView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F3F3F3">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp">
+
+        <CheckBox
+            android:id="@+id/item_checkbox"
+            android:layout_width="18dp"
+            android:layout_height="19dp"
+            android:layout_marginLeft="12dp"
+            android:layout_centerVertical="true"
+            style="@style/CartCheckboxTheme"
+            android:layout_gravity="center_vertical"/>
+
+        <TextView
+            android:id="@+id/address_flag"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择"
+            android:layout_marginLeft="10dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/item_checkbox"
+            android:textColor="#ff333333"
+            android:textSize="14sp">
+        </TextView>
+
+        <LinearLayout
+            android:id="@+id/delete_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:visibility="gone"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentRight="true">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_delete_search">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="删除"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff333333"
+                android:textSize="14sp">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/edit_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="42dp"
+            android:orientation="horizontal"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="11dp">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_gravity="center_vertical"
+                android:src="@mipmap/ic_address_edit">
+            </ImageView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="编辑"
+                android:layout_marginLeft="8dp"
+                android:layout_gravity="center_vertical"
+                android:textColor="#ff333333"
+                android:textSize="14sp">
+            </TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="9dp"
+        android:background="#F3F3F3">
+    </View>
+
+</LinearLayout>

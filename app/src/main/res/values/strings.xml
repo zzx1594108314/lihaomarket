@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">利豪</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_release_label">释放立即刷新</string>
+    <string name="pushmsg_center_load_more_ongoing_text">正在加载中</string>
+    <string name="pay_by_wx">客户端签名微信支付</string>
+    <string name="pay_by_wxap">服务器端签名微信支付</string>
+    <string name="check_pay">检查微信版本是否支持支付</string>
+    <string name="pay_by_wx_title">通过微信支付</string>
+    <string name="errcode_success">发送成功</string>
+    <string name="errcode_cancel">发送取消</string>
+    <string name="errcode_deny">发送被拒绝</string>
+    <string name="errcode_unknown">发送返回</string>
+    <string name="app_tip">提示</string>
+    <string name="pay_result_callback_msg" formatted="false">微信支付结果：%s</string>
+    <string name="about_copyright_description_1">Copyright © 2021-2021 LIHAO.</string>
+    <string name="about_copyright_description_2">All Rights Reserved.</string>
+    <string name="about_copyright_description_3">江苏利豪 版权所有</string>
+</resources>

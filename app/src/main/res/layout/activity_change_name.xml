@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="昵称"
+            android:layout_marginLeft="12dp"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ff333333"
+            android:textSize="16sp">
+        </TextView>
+
+        <EditText
+            android:id="@+id/nick_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="8dp"
+            android:textColor="#ff666666"
+            android:textSize="15sp"
+            android:hint="请输入昵称"
+            android:background="@null">
+        </EditText>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/confirm"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="17dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp">
+    </TextView>
+
+</LinearLayout>

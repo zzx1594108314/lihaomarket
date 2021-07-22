@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <include layout="@layout/title_bar">
+    </include>
+
+    <RelativeLayout
+        android:id="@+id/change_pw"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_safe_lock"
+            android:layout_marginLeft="12dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="51dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="修改登录密码"
+                android:textColor="#ff333333"
+                android:textSize="15sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="互联网账号存在被盗风险，建议您定期更改密码       "
+                android:textColor="#ff666666"
+                android:textSize="12sp">
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_more">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/mobile_layout"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/safe_mobile"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_safe_lock"
+            android:layout_marginLeft="12dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="51dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/mobile_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="立即验证手机"
+                android:textColor="#ff333333"
+                android:textSize="15sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="验证后，可用于快速找回登录密码，接收消息提醒"
+                android:textColor="#ff666666"
+                android:textSize="12sp">
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_more">
+        </ImageView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/pay_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_marginTop="1dp"
+        android:background="#FFFFFF">
+
+        <ImageView
+            android:id="@+id/pay_image"
+            android:layout_width="24dp"
+            android:layout_height="25dp"
+            android:layout_centerVertical="true"
+            android:background="@mipmap/ic_safe_lock"
+            android:layout_marginLeft="12dp">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="51dp"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/pay_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="启用支付密码"
+                android:textColor="#ff333333"
+                android:textSize="15sp">
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="启用后，购物需验证支付密码，增加安全性"
+                android:textColor="#ff666666"
+                android:textSize="12sp">
+            </TextView>
+        </LinearLayout>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@mipmap/ic_more">
+        </ImageView>
+    </RelativeLayout>
+
+</LinearLayout>

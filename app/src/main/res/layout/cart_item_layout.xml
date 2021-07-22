@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="129dp"
+        android:background="#FFFFFF">
+
+        <LinearLayout
+            android:id="@+id/image_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="75dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <CheckBox
+                android:id="@+id/item_checkbox"
+                android:layout_width="18dp"
+                android:layout_height="19dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:visibility="visible"
+                style="@style/CartCheckboxTheme"
+                android:layout_gravity="center_vertical"/>
+
+            <ImageView
+                android:id="@+id/imageview"
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:layout_marginLeft="10dp"
+                android:layout_gravity="center_vertical">
+            </ImageView>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="13dp"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@+id/image_layout"
+            android:textColor="#ff232326"
+            android:textSize="15sp">
+        </TextView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/title"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/image_layout"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/subTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#ff666666"
+                android:textSize="12sp">
+            </TextView>
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-10dp"
+                android:textColor="#fff94747"
+                android:textSize="12sp">
+            </TextView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <com.lihao.market.Custom.CartAmountView
+                android:id="@+id/amountview"
+                android:layout_width="wrap_content"
+                android:layout_height="23dp">
+            </com.lihao.market.Custom.CartAmountView>
+
+            <LinearLayout
+                android:layout_width="88dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="11dp">
+
+                <TextView
+                    android:id="@+id/save_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="收藏"
+                    android:gravity="center"
+                    android:textColor="#ff666666"
+                    android:textSize="13sp">
+                </TextView>
+
+                <TextView
+                    android:id="@+id/delete_cart"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="删除"
+                    android:gravity="center"
+                    android:textColor="#ff666666"
+                    android:textSize="13sp">
+                </TextView>
+            </LinearLayout>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#E5E5E5">
+    </View>
+
+</LinearLayout>

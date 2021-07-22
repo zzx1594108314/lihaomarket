@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tabs_rg" />
+
+    <RadioGroup
+        android:id="@+id/tabs_rg"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_alignParentBottom="true"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rb_fragment_homepage"
+            style="@style/Custom.TabRadioButton"
+            android:checked="true"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="-3dp"
+            android:drawableTop="@drawable/home_home"
+            android:text="首页" />
+
+        <RadioButton
+            android:id="@+id/rb_fragment_sort"
+            style="@style/Custom.TabRadioButton"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="-3dp"
+            android:drawableTop="@drawable/sort_sort"
+            android:text="分类" />
+
+        <RadioButton
+            android:id="@+id/rb_fragment_search"
+            style="@style/Custom.TabRadioButton"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="-3dp"
+            android:drawableTop="@drawable/search_search"
+            android:text="搜索" />
+
+        <RadioButton
+            android:id="@+id/rb_fragment_cart"
+            style="@style/Custom.TabRadioButton"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="-3dp"
+            android:drawableTop="@drawable/cart_cart"
+            android:text="购物车" />
+
+        <RadioButton
+            android:id="@+id/rb_fragment_person"
+            style="@style/Custom.TabRadioButton"
+            android:layout_marginTop="6dp"
+            android:drawablePadding="-3dp"
+            android:drawableTop="@drawable/person_person"
+            android:text="我" />
+    </RadioGroup>
+
+</RelativeLayout>

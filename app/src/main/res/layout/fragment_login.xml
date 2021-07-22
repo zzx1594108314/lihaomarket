@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#F3F3F3">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:text="个人中心"
+        android:gravity="center"
+        android:background="#FFFFFF"
+        android:textColor="#ff333333"
+        android:textSize="18sp">
+    </TextView>
+
+    <ImageView
+        android:layout_width="83dp"
+        android:layout_height="83dp"
+        android:layout_marginTop="21dp"
+        android:src="@mipmap/ic_person_head"
+        android:layout_gravity="center_horizontal">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="124dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:layout_marginTop="11dp"
+        android:background="@drawable/account_info_layout">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="21dp"
+            android:background="@drawable/account_input_bg">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:src="@mipmap/ic_account" />
+
+            <EditText
+                android:id="@+id/input"
+                android:layout_width="match_parent"
+                android:layout_height="35dp"
+                android:layout_marginRight="50dp"
+                android:layout_marginLeft="37dp"
+                android:textColor="#ff333333"
+                android:textSize="15sp"
+                android:inputType="phone"
+                android:hint="请输入您的手机号"
+                android:layout_centerVertical="true"
+                android:background="@null"/>
+
+            <ImageView
+                android:id="@+id/account_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="24dp"
+                android:visibility="gone"
+                android:src="@mipmap/ic_delete"/>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="38dp"
+            android:layout_marginLeft="14dp"
+            android:layout_marginRight="14dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/account_input_bg">
+
+            <ImageView
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="11dp"
+                android:src="@mipmap/ic_password" />
+
+            <EditText
+                android:id="@+id/edt_pwd"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="37dp"
+                android:background="@null"
+                android:hint="请输入6-20位登录密码"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+
+            <ImageView
+                android:id="@+id/pwd_delete"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="51dp"
+                android:visibility="gone"
+                android:src="@mipmap/ic_delete"/>
+
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="24dp"
+                android:layout_height="15dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:background="@drawable/showpwd"
+                android:button="@null" />
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="立即登录"
+        android:gravity="center"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="17dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp">
+    </TextView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp">
+
+        <TextView
+            android:id="@+id/quick_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机号快捷登录"
+            android:layout_marginRight="11dp"
+            android:layout_alignParentRight="true"
+            android:textColor="#ff333333"
+            android:textSize="15sp">
+        </TextView>
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="第三方登录"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="15dp"
+        android:textColor="#ff333333"
+        android:textSize="15sp">
+    </TextView>
+
+    <ImageView
+        android:id="@+id/weichat"
+        android:layout_width="37dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="16dp"
+        android:src="@mipmap/ic_weichat"
+        android:layout_gravity="center_horizontal">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/forget_pwd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="忘记密码"
+                android:textColor="#ff333333"
+                android:textSize="14sp"
+                android:layout_marginRight="11dp"
+                android:layout_alignParentRight="true">
+            </TextView>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/new_user"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="新用户注册"
+                android:textColor="#fff94747"
+                android:textSize="14sp"
+                android:layout_marginLeft="11dp">
+            </TextView>
+
+        </RelativeLayout>
+    </LinearLayout>
+
+</LinearLayout>

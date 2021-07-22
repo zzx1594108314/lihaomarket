@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/title_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="收货人"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textColor="#ff333333"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-5dp"
+            android:src="@mipmap/ic_bizozhi">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="9dp"
+            android:hint="请输入姓名"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ff666666"
+            android:textSize="15sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#F3F3F3">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="12dp"
+            android:textColor="#ff333333"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="-5dp"
+            android:src="@mipmap/ic_bizozhi">
+        </ImageView>
+
+        <EditText
+            android:id="@+id/phone"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="9dp"
+            android:hint="请输入手机号"
+            android:inputType="phone"
+            android:layout_gravity="center_vertical"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:background="@null"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#F3F3F3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#FFFFFF"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/area_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="所在地区"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            android:textColor="#ff333333"
+            android:textSize="15sp"/>
+
+        <ImageView
+            android:layout_width="7dp"
+            android:layout_height="7dp"
+            android:layout_toRightOf="@+id/area_title"
+            android:layout_marginTop="17dp"
+            android:src="@mipmap/ic_bizozhi">
+        </ImageView>
+
+        <TextView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginLeft="18dp"
+            android:layout_marginRight="11dp"
+            android:gravity="center_vertical"
+            android:layout_toRightOf="@+id/area_title"
+            android:layout_centerVertical="true"
+            android:textColor="#ff666666"
+            android:textSize="14sp"
+            android:drawableRight="@mipmap/ic_more" />
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#F3F3F3">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="详细地址"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="12dp"
+                android:textColor="#ff333333"
+                android:textSize="15sp"/>
+
+            <ImageView
+                android:layout_width="7dp"
+                android:layout_height="7dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="-5dp"
+                android:src="@mipmap/ic_bizozhi">
+            </ImageView>
+
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/detail_edit"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:textColor="#ff666666"
+            android:layout_marginLeft="12dp"
+            android:hint="详细地址"
+            android:textSize="14sp"
+            android:background="@null">
+        </EditText>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:background="#F3F3F3">
+    </View>
+
+    <TextView
+        android:id="@+id/save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="保存"
+        android:gravity="center"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="17dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp">
+    </TextView>
+
+</LinearLayout>

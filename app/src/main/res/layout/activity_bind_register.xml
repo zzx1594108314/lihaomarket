@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFFFFF">
+
+    <include layout="@layout/title_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="50dp">
+
+        <com.lihao.market.Custom.CircleImageView
+            android:id="@+id/image"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="24dp"
+            android:layout_gravity="center_vertical">
+        </com.lihao.market.Custom.CircleImageView>
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="18dp"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:text="星">
+        </TextView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f3f3f3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+    </View>
+
+    <EditText
+        android:id="@+id/phone"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:hint="请输入手机号"
+        android:background="@null"
+        android:inputType="phone"
+        android:layout_marginLeft="13dp"
+        android:layout_marginRight="13dp"
+        android:textColor="#ff333333"
+        android:textSize="16sp">
+    </EditText>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f3f3f3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+    </View>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="44dp">
+
+        <EditText
+            android:id="@+id/code_ed"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:hint="请输入短信验证码"
+            android:background="@null"
+            android:inputType="number"
+            android:layout_marginLeft="13dp"
+            android:layout_marginRight="13dp"
+            android:textColor="#ff333333"
+            android:textSize="16sp">
+        </EditText>
+
+        <TextView
+            android:id="@+id/code"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="20dp"
+            android:padding="3dp"
+            android:text="获取短信验证码"
+            android:textColor="#ff666666"
+            android:textSize="16sp"
+            android:visibility="visible" />
+    </RelativeLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#f3f3f3"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp">
+    </View>
+
+    <TextView
+        android:id="@+id/sure"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:text="确定"
+        android:gravity="center"
+        android:layout_marginRight="11dp"
+        android:layout_marginLeft="11dp"
+        android:background="@drawable/login_bg"
+        android:layout_marginTop="17dp"
+        android:textColor="#ffffffff"
+        android:textSize="17sp">
+    </TextView>
+
+</LinearLayout>

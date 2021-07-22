@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/title_bar">
+    </include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/province_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/province"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="#333333">
+            </TextView>
+
+            <View
+                android:id="@+id/province_view"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#F94747"
+                android:visibility="gone"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/city_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/city"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="#333333">
+            </TextView>
+
+            <View
+                android:id="@+id/city_view"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#F94747"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/county_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/county"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="#333333">
+            </TextView>
+
+            <View
+                android:id="@+id/county_view"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#F94747"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+            </View>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/town_layout"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_weight="1">
+
+            <TextView
+                android:id="@+id/town"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:textColor="#333333">
+            </TextView>
+
+            <View
+                android:id="@+id/town_view"
+                android:layout_width="50dp"
+                android:layout_height="2dp"
+                android:background="#F94747"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true">
+            </View>
+        </RelativeLayout>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </androidx.recyclerview.widget.RecyclerView>
+
+</LinearLayout>
