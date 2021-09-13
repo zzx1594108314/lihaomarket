@@ -155,18 +155,21 @@
             <View
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
+                android:visibility="gone"
                 android:background="#E6EAEE">
             </View>
 
             <ImageView
                 android:id="@+id/jingpin"
                 android:layout_width="match_parent"
+                android:visibility="gone"
                 android:layout_height="45dp">
             </ImageView>
 
             <View
                 android:layout_width="match_parent"
                 android:layout_height="0.5dp"
+                android:visibility="gone"
                 android:background="#E6EAEE">
             </View>
 
@@ -175,6 +178,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="250dp"
                 android:background="#FFFFFF"
+                android:visibility="gone"
                 android:numColumns="3">
             </GridView>
 

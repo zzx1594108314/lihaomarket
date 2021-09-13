@@ -87,7 +87,7 @@ public class ProductTypeAdapter extends BaseAdapter
             holder.name.setTextColor(mContext.getResources().getColor(R.color.text_un_select_color));
             holder.name.setBackgroundResource(R.drawable.text_squire_grey);
         }
-        holder.name.setPadding(40, 0, 40, 0);
+        holder.name.setPadding(20, 10, 20, 10);
 
         if (position == 0 && first)
         {

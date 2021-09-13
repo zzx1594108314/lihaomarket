@@ -46,7 +46,7 @@ public class LogoSuspendService extends Service
                     HashMap<String, String> info = new HashMap<>();
                     info.put("name", account);
                     info.put("tel", account);
-                    Intent intent = new MQIntentBuilder(getApplicationContext()).setCustomizedId(account).setClientInfo(info).build();
+                    Intent intent = new MQIntentBuilder(getApplicationContext()).setCustomizedId(account).updateClientInfo(info).setClientInfo(info).build();
                     startActivity(intent);
                 }
                 else

@@ -497,6 +497,9 @@ public class PersonPageFragment extends BaseFragment implements View.OnClickList
         try {
             AjaxParams params = new AjaxParams();
             params.put("Platform", "ANDROID-SC");
+            params.put("screatname", "");
+            params.put("screatword", "");
+            params.put("sign", "");
             MyApplication.http.post("http://118.178.59.142:5488/Boiler.asmx/GetVersion", params, new AjaxCallBack<Object>() {
                 @Override
                 public void onSuccess(Object o) {

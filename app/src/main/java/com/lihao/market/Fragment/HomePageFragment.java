@@ -625,8 +625,40 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
         super.onDestroy();
         if (getActivity() != null)
         {
-            getActivity().stopService(service);
             BroadCastManager.getInstance().unregisterReceiver(getActivity(), receiver);
+        }
+    }
+
+    @Override
+    public void onStop()
+    {
+        super.onStop();
+        if (getActivity() != null)
+        {
+            getActivity().stopService(service);
+        }
+    }
+
+    @Override
+    public void onResume()
+    {
+        super.onResume();
+
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(getContext()))
+        {
+            showKefuDialog();
+        }
+        else
+        {
+            if (getActivity() != null)
+            {
+                if (service == null)
+                {
+                    //已经有权限，可以直接显示悬浮窗
+                    service = new Intent(getContext(), LogoSuspendService.class);
+                }
+                getActivity().startService(service);
+            }
         }
     }
 
@@ -688,19 +720,7 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
                                         else
                                         {
                                             initData();
-                                            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(getContext()))
-                                            {
-                                                showKefuDialog();
-                                            }
-                                            else
-                                            {
-                                                if (getActivity() != null)
-                                                {
-                                                    //已经有权限，可以直接显示悬浮窗
-                                                    service = new Intent(getContext(), LogoSuspendService.class);
-                                                    getActivity().startService(service);
-                                                }
-                                            }
+
                                             customDialog.dismiss();
                                         }
                                     }
@@ -711,19 +731,6 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
                             else
                             {
                                 initData();
-                                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M && !Settings.canDrawOverlays(getContext()))
-                                {
-                                    showKefuDialog();
-                                }
-                                else
-                                {
-                                    if (getActivity() != null)
-                                    {
-                                        //已经有权限，可以直接显示悬浮窗
-                                        service = new Intent(getContext(), LogoSuspendService.class);
-                                        getActivity().startService(service);
-                                    }
-                                }
                             }
 
                         }
@@ -766,11 +773,6 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
                             Intent intent = new Intent(Settings.ACTION_MANAGE_OVERLAY_PERMISSION);
                             intent.setData(Uri.parse("package:" + getActivity().getPackageName()));
                             startActivityForResult(intent, 100);
-                        } else
-                        {
-                            //已经有权限，可以直接显示悬浮窗
-                            service = new Intent(getContext(), LogoSuspendService.class);
-                            getActivity().startService(service);
                         }
                     }
                     SharedPreferencesUtils.saveSpStringData(SharedPreferencesUtils.SHOW_KEFU_DIALOG, "1");
@@ -800,7 +802,10 @@ public class HomePageFragment extends BaseFragment implements View.OnClickListen
             {
                 if (getActivity() != null && Settings.canDrawOverlays(getContext()))
                 {
-                    service = new Intent(getContext(), LogoSuspendService.class);
+                    if (service == null)
+                    {
+                        service = new Intent(getContext(), LogoSuspendService.class);
+                    }
                     getActivity().startService(service);
                 }
             }

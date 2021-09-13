@@ -133,8 +133,6 @@ public class CartItemAdapter extends RecyclerView.Adapter<CartItemAdapter.ViewHo
                 holder.titleTv.setText(mData.get(position).getGoods_name() + "(已失效)");
             }
 
-            Log.i("zzx","recid: " + recId.size());
-            Log.i("zzx","all: " + all.size());
 
             holder.deleteTv.setOnClickListener(new View.OnClickListener()
             {
